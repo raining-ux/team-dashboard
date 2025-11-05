@@ -94,17 +94,212 @@
   </style>
 </head>
 <body class="bg-light">
-  <main class="container py-5">
-    <h1 class="mb-4">Hello, Bootstrap</h1>
+  <!--  3. Top navigation bar -->
+  <header class="app-bar">
+    <div class="container py-3 d-flex align-items-center justify-content-between">
+      <strong>NCI Academy</strong>
+      <span class="small opacity-75">Team Dashboard</span>
+    </div>
+  </header>
 
-    <div class="row g-3">
-      <div class="col-12 col-md-6">
-        <div class="p-4 bg-white border rounded">Left</div>
-      </div>
-      <div class="col-12 col-md-6">
-        <div class="p-4 bg-white border rounded">Right</div>
-      </div>
+  <!--  4. Main content area -->
+  <main class="container py-4 py-lg-5">
+
+    <!-- Page title -->
+    <div class="mb-4">
+      <h1 class="display-5 fw-semibold mb-2">Team Dashboard</h1>
+      <div class="title-rule"></div>
+    </div>
+
+    <!--  5Bootstrap Grid Layout -->
+    <div class="row g-4">
+      <!-- Left column: filters -->
+      <aside class="col-12 col-lg-4 col-xl-3">
+        <form class="filter-card p-3 p-lg-4 rounded-4">
+
+          <!-- Filter section title -->
+          <div class="d-flex align-items-center gap-2 mb-3">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" class="text-secondary">
+              <path d="M3 6h18M6 12h12M10 18h4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+            <h2 class="h5 m-0">Filter</h2>
+          </div>
+
+          <!--  Status filter (radio buttons) -->
+          <fieldset class="mb-3">
+            <legend class="text-uppercase small text-secondary mb-2">Status</legend>
+            <input type="radio" class="btn-check" name="status" id="status-available" checked>
+            <label class="btn chip-btn me-2 mb-2" for="status-available">Available</label>
+
+            <input type="radio" class="btn-check" name="status" id="status-offline">
+            <label class="btn chip-btn me-2 mb-2" for="status-offline">Offline</label>
+          </fieldset>
+
+          <!--  Team filter (checkboxes) -->
+          <fieldset class="mb-3">
+            <legend class="text-uppercase small text-secondary mb-2">Team</legend>
+            <input type="checkbox" class="btn-check" id="team-design" checked>
+            <label class="btn chip-btn me-2 mb-2" for="team-design">Design</label>
+
+            <input type="checkbox" class="btn-check" id="team-engineering" checked>
+            <label class="btn chip-btn me-2 mb-2" for="team-engineering">Engineering</label>
+          </fieldset>
+
+          <!-- “Add Member” button -->
+          <div class="pt-2">
+            <button type="button" class="btn btn-cta w-100">
+              Add Member
+            </button>
+          </div>
+        </form>
+      </aside>
+
+      <!--  Right column: member cards -->
+      <section class="col-12 col-lg-8 col-xl-9">
+        <div class="row g-3 g-sm-4">
+
+          <!-- Example member card -->
+          <div class="col-12 col-md-6 col-xl-4">
+            <article class="member member--active p-3 p-lg-4">
+              <div class="d-flex align-items-center gap-3">
+                <img class="avatar" src="https://i.pravatar.cc/150?img=11" alt="Avatar">
+                <div>
+                  <div class="fw-semibold">Alex Johnson</div>
+                  <div class="role">Product Designer</div>
+                  <div class="status status--active">active</div>
+                </div>
+              </div>
+            </article>
+          </div>
+
+        
+          <div class="col-12 col-md-6 col-xl-4">
+            <article class="member member--inactive p-3 p-lg-4">
+              <div class="d-flex align-items-center gap-3">
+                <img class="avatar" src="https://i.pravatar.cc/150?img=32" alt="Avatar">
+                <div>
+                  <div class="fw-semibold">Priya Shah</div>
+                  <div class="role">iOS Engineer</div>
+                  <div class="status status--inactive">inactive</div>
+                </div>
+              </div>
+            </article>
+          </div>
+
+           <div class="col-12 col-md-6 col-xl-4">
+            <article class="member member--inactive p-3 p-lg-4">
+              <div class="d-flex align-items-center gap-3">
+                <img class="avatar" src="https://i.pravatar.cc/150?img=32" alt="Avatar">
+                <div>
+                  <div class="fw-semibold">Priya Shah</div>
+                  <div class="role">iOS Engineer</div>
+                  <div class="status status--inactive">inactive</div>
+                </div>
+              </div>
+            </article>
+          </div>
+
+           <div class="col-12 col-md-6 col-xl-4">
+            <article class="member member--inactive p-3 p-lg-4">
+              <div class="d-flex align-items-center gap-3">
+                <img class="avatar" src="https://i.pravatar.cc/150?img=32" alt="Avatar">
+                <div>
+                  <div class="fw-semibold">Priya Shah</div>
+                  <div class="role">iOS Engineer</div>
+                  <div class="status status--inactive">inactive</div>
+                </div>
+              </div>
+            </article>
+          </div>
+
+           <div class="col-12 col-md-6 col-xl-4">
+            <article class="member member--inactive p-3 p-lg-4">
+              <div class="d-flex align-items-center gap-3">
+                <img class="avatar" src="https://i.pravatar.cc/150?img=32" alt="Avatar">
+                <div>
+                  <div class="fw-semibold">Priya Shah</div>
+                  <div class="role">iOS Engineer</div>
+                  <div class="status status--inactive">inactive</div>
+                </div>
+              </div>
+            </article>
+          </div>
+
+           <div class="col-12 col-md-6 col-xl-4">
+            <article class="member member--inactive p-3 p-lg-4">
+              <div class="d-flex align-items-center gap-3">
+                <img class="avatar" src="https://i.pravatar.cc/150?img=32" alt="Avatar">
+                <div>
+                  <div class="fw-semibold">Priya Shah</div>
+                  <div class="role">iOS Engineer</div>
+                  <div class="status status--inactive">inactive</div>
+                </div>
+              </div>
+            </article>
+          </div>
+
+
+           <div class="col-12 col-md-6 col-xl-4">
+            <article class="member member--inactive p-3 p-lg-4">
+              <div class="d-flex align-items-center gap-3">
+                <img class="avatar" src="https://i.pravatar.cc/150?img=32" alt="Avatar">
+                <div>
+                  <div class="fw-semibold">Priya Shah</div>
+                  <div class="role">iOS Engineer</div>
+                  <div class="status status--inactive">inactive</div>
+                </div>
+              </div>
+            </article>
+          </div>
+
+           <div class="col-12 col-md-6 col-xl-4">
+            <article class="member member--inactive p-3 p-lg-4">
+              <div class="d-flex align-items-center gap-3">
+                <img class="avatar" src="https://i.pravatar.cc/150?img=32" alt="Avatar">
+                <div>
+                  <div class="fw-semibold">Priya Shah</div>
+                  <div class="role">iOS Engineer</div>
+                  <div class="status status--inactive">inactive</div>
+                </div>
+              </div>
+            </article>
+          </div>
+
+           <div class="col-12 col-md-6 col-xl-4">
+            <article class="member member--inactive p-3 p-lg-4">
+              <div class="d-flex align-items-center gap-3">
+                <img class="avatar" src="https://i.pravatar.cc/150?img=32" alt="Avatar">
+                <div>
+                  <div class="fw-semibold">Priya Shah</div>
+                  <div class="role">iOS Engineer</div>
+                  <div class="status status--inactive">inactive</div>
+                </div>
+              </div>
+            </article>
+          </div>
+
+           <div class="col-12 col-md-6 col-xl-4">
+            <article class="member member--inactive p-3 p-lg-4">
+              <div class="d-flex align-items-center gap-3">
+                <img class="avatar" src="https://i.pravatar.cc/150?img=32" alt="Avatar">
+                <div>
+                  <div class="fw-semibold">Priya Shah</div>
+                  <div class="role">iOS Engineer</div>
+                  <div class="status status--inactive">inactive</div>
+                </div>
+              </div>
+            </article>
+          </div>
+
+        </div>
+      </section>
     </div>
   </main>
+
+  <!--  9. Footer -->
+  <footer class="app-footer py-4">
+    <div class="container text-center small">© 2025 NCI Academy</div>
+  </footer>
+
 </body>
 </html>
