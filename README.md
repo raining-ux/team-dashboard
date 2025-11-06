@@ -41,4 +41,9 @@ The goal was to demonstrate clear visual hierarchy, usability, and clean code or
 ## 🌐 Live Preview / Repository
 [GitHub Repository](https://github.com/raining-ux/team-dashboard)
 
+---
+### 🚀 Live Demo
+You can view the responsive dashboard directly in your browser here:  
+👉 [**Open Live Demo**](https://raining-ux.github.io/team-dashboard/)
+
 © 2025 NCI Academy — Exercise Submission by Isabella Krause
