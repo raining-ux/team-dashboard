@@ -1,6 +1,4 @@
-# Team Dashboard – NCI Academy Exercise
-
-This project was completed as part of the Academy Learning Environment UI/UX Web Designer (RFQ 183994) evaluation.
+# Team Dashboard Interface Design
 
 ---
 
@@ -45,5 +43,3 @@ The goal was to demonstrate clear visual hierarchy, usability, and clean code or
 ### 🚀 Live Demo
 You can view the responsive dashboard directly in your browser here:  
 👉 [**Open Live Demo**](https://raining-ux.github.io/team-dashboard/)
-
-© 2025 NCI Academy — Exercise Submission by Isabella Krause
